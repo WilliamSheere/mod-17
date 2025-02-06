@@ -2,20 +2,25 @@ import { Router } from 'express';
 const router = Router();
 import {
   getAllThoughts,
-  // getCourseById,
+   getThoughtById,
   createThought,
-  // updateCourse,
-  // deleteCourse,
+   updateThought,
+   deleteThought,
+   createReaction,
+   deleteReaction
 } from '../../controllers/thoughtController.js';
 
-// /api/courses
+// /api/thoughts
 router.route("/").get(getAllThoughts).post(createThought);
 
-// /api/courses/:courseId
-// router
-//   .route('/:courseId')
-//   .get(getCourseById)
-//   .put(updateCourse)
-//   .delete(deleteCourse);
+//  /api/thoughts/:thoughtId
+router
+  .route('/:thoughtId')
+  .get(getThoughtById)
+   .put(updateThought)
+  .delete(deleteThought)
 
+router.route("/:thoughtId/reactions")
+.post(createReaction)
+.delete(deleteReaction)
 export { router as thoughtRouter };
