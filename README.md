@@ -1,6 +1,6 @@
 # mod-17
 Social Network API
-
+Walkthrough Video: https://drive.google.com/file/d/1P_jKy7dQO_GuvxwsKGHJo44ML_-WZysI/view
 Description:
 This project is an API for a social network web application. The API allows users to share their thoughts, react to friends' thoughts, and manage their friend lists. Built using Express.js for routing and MongoDB with Mongoose as the Object Data Modeling (ODM) library, this API provides endpoints for creating, reading, updating, and deleting user data and interactions.
 
@@ -34,3 +34,4 @@ Implement middleware for validation, authentication, and error handling.
 Consider using tools like Swagger or Postman for API testing.
 If building a full-stack application, the front end can consume these APIs to manage user data and thoughts effectively.
 This structure supports a typical social platform where users can interact through thoughts and friendships while also allowing for personalized feedback through reactions
+
